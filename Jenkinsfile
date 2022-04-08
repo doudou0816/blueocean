@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('check out code') {
       steps {
-        git 'https://github.com/doudou0816/simple-java-maven-app'
+        git(url: 'https://github.com/doudou0816/simple-java-maven-app', credentialsId: 'access-token')
       }
     }
 
